@@ -24,6 +24,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <Head>
+        <meta name="google-site-verification" content="cc152943571c8c2f" />
         <title>Uwem Umoren | WeMoren Portfolio</title>
         <meta
           name="description"
