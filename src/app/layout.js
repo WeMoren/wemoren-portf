@@ -58,7 +58,7 @@ export default function RootLayout({ children }) {
         />
         <meta property="og:image" content="/favico/social-preview.png" />{" "}
         {/* make a social image */}
-        <meta property="og:url" content="https://yourdomain.com" />
+        <meta property="og:url" content="https://wemoren-portf.vercel.app" />
         <meta property="og:type" content="website" />
         {/* Twitter Card */}
         <meta name="twitter:card" content="summary_large_image" />
