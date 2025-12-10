@@ -12,7 +12,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata = {
-  title: "WeMoreno Portfolio",
+  title: "WeMoren Portfolio",
   description: "Uwem Umoren | Frontend Developer",
   icons: {
     icon: "/favicon.ico",
