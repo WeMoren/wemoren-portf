@@ -1,66 +1,111 @@
-import Image from "next/image";
-import styles from "./page.module.css";
+"use client";
+
+import ProjectCard from "./components/ProjectCard";
+import BlogCard from "./components/BlogCard";
+import page from "./contact/page";
 
 export default function Home() {
+  const featuredProjects = [
+    {
+      id: 1,
+      title: "Portfolio Website",
+      tech: "Next.js, CSS",
+      description: "My dev portfolio showcasing my projects",
+    },
+    {
+      id: 2,
+      title: "Movie App",
+      tech: "React, TMDB API",
+      description: "Movie discovery app",
+    },
+    {
+      id: 3,
+      title: "Countdown Timer",
+      tech: "React, CSS",
+      description: "Time management app",
+    },
+  ];
+
+  const latestBlogs = [
+    {
+      id: 1,
+      title: "Learning Next.js 13",
+      summary: "A beginner's journey into Next.js 13",
+      slug: "learning-nextjs-13",
+    },
+  ];
+
   return (
-    <div className={styles.page}>
-      <main className={styles.main}>
-        <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className={styles.intro}>
-          <h1>To get started, edit the page.js file.</h1>
-          <p>
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Learning
-            </a>{" "}
-            center.
-          </p>
+    <main>
+      {/* Hero Section */}
+      <section className="hero-gradient">
+        <h1
+          style={{ fontSize: "3rem", fontWeight: "bold", marginBottom: "1rem" }}
+        >
+          Hi, I&apos;m Uwem Umoren | WeMoren
+        </h1>
+        <p style={{ fontSize: "1.25rem", marginBottom: "1.5rem" }}>
+          Frontend Developer | React & Next.js Enthusiast
+        </p>
+        <a href="/projects" className="brand-button">
+          See My Work
+        </a>
+      </section>
+
+      {/* Featured Projects */}
+      <section className="container">
+        <h2>Featured Projects</h2>
+        <div className="project-container">
+          {featuredProjects.map((project) => (
+            <ProjectCard key={project.id} project={project} />
+          ))}
         </div>
-        <div className={styles.ctas}>
-          <a
-            className={styles.primary}
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className={styles.logo}
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={16}
-            />
-            Deploy Now
-          </a>
-          <a
-            className={styles.secondary}
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
+      </section>
+
+      {/* Skills / Tech Stack */}
+      <section className="container">
+        <h2>Skills & Tech Stack</h2>
+        <div className="skills">
+          {[
+            "React",
+            "Next.js",
+            "D3.js",
+            "JavaScript",
+            "APIs",
+            "REST APIs",
+            "Tailwindcss",
+            "HTML",
+            "CSS",
+          ].map((skill) => (
+            <span key={skill}>{skill}</span>
+          ))}
         </div>
-      </main>
-    </div>
+      </section>
+
+      {/* Latest Blogs */}
+      <section className="container">
+        <h2>Latest Blog Posts</h2>
+        <div className="blog-container">
+          {latestBlogs.map((blog) => (
+            <BlogCard key={blog.id} blog={blog} />
+          ))}
+        </div>
+      </section>
+
+      {/* Contact CTA */}
+      <section
+        className="hero-gradient"
+        style={{ marginTop: "2rem", padding: "2rem" }}
+      >
+        <h2
+          style={{ fontSize: "2rem", fontWeight: "600", marginBottom: "1rem" }}
+        >
+          Let&apos;s Build Something Together
+        </h2>
+        <a href="/contact" className="brand-button" target="_blank">
+          Contact Me
+        </a>
+      </section>
+    </main>
   );
 }
