@@ -26,7 +26,7 @@ export default function RootLayout({ children }) {
       <Head>
         <meta
           name="google-site-verification"
-          content="google.cc152943571c8c2f"
+          content="qZRiC6xeSv6im1TxfU7r-6n2Vfj_1xypkBc6MPm5bIM"
         />
         <title>Uwem Umoren | WeMoren Portfolio</title>
         <meta
