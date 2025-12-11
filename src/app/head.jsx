@@ -1,11 +1,13 @@
 export default function Head() {
   return (
     <>
+      {/* Google Search Console Verification */}
       <meta
         name="google-site-verification"
         content="qZRiC6xeSv6im1TxfU7r-6n2Vfj_1xypkBc6MPm5bIM"
       />
 
+      {/* SEO */}
       <title>Uwem Umoren | WeMoren Portfolio</title>
       <meta
         name="description"

@@ -18,6 +18,8 @@ export const metadata = {
     icon: "/favicon.ico",
     apple: "/favicon.ico",
   },
+  metadataBase: new URL("https://wemoren-portf.vercel.app"),
+  alternates: {},
 };
 
 export default function RootLayout({ children }) {
