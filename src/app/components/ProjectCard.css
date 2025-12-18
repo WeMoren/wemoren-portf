@@ -1,7 +1,12 @@
-.project-card {
-  width: 250px;
+.project-card-skills {
+  width: 200px;
   min-height: 280px;
   border-radius: 10px;
   border: 1px solid #0a0f24;
   padding: 10px;
+}
+
+.project-card > .project-title {
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
 }

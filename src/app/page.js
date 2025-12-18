@@ -1,8 +1,9 @@
 "use client";
 
+import Link from "next/link";
 import ProjectCard from "./components/ProjectCard";
-import BlogCard from "./components/BlogCard";
 import page from "./contact/page";
+import AboutMe from "./components/AboutMe";
 
 export default function Home() {
   const featuredProjects = [
@@ -10,7 +11,7 @@ export default function Home() {
       id: 1,
       title: "Portfolio Website",
       tech: "Next.js, CSS",
-      description: "My dev portfolio showcasing my projects",
+      description: "My dev portfolio showcasing...",
     },
     {
       id: 2,
@@ -18,48 +19,25 @@ export default function Home() {
       tech: "React, TMDB API",
       description: "Movie discovery app",
     },
-    {
-      id: 3,
-      title: "Countdown Timer",
-      tech: "React, CSS",
-      description: "Time management app",
-    },
-  ];
-
-  const latestBlogs = [
-    {
-      id: 1,
-      title: "Learning Next.js 13",
-      summary: "A beginner's journey into Next.js 13",
-      slug: "learning-nextjs-13",
-    },
+    //     {
+    //       id: 3,
+    //       title: "Countdown Timer",
+    //       tech: "React, CSS",
+    //       description: "Time management app",
+    //     },
   ];
 
   return (
     <main>
       {/* Hero Section */}
       <section className="hero-gradient">
-        <h1
-          style={{ fontSize: "3rem", fontWeight: "bold", marginBottom: "1rem" }}
-        >
-          Hi, I&apos;m Uwem Umoren | WeMoren
-        </h1>
-        <p style={{ fontSize: "1.25rem", marginBottom: "1.5rem" }}>
+        <h1 className="name">Hi, I&apos;m Uwem Umoren (WeMoren)</h1>
+        <p className="tech-role">
           Frontend Developer | React & Next.js Enthusiast
         </p>
         <a href="/projects" className="brand-button">
           See My Work
         </a>
-      </section>
-
-      {/* Featured Projects */}
-      <section className="container">
-        <h2>Featured Projects</h2>
-        <div className="project-container">
-          {featuredProjects.map((project) => (
-            <ProjectCard key={project.id} project={project} />
-          ))}
-        </div>
       </section>
 
       {/* Skills / Tech Stack */}
@@ -71,24 +49,34 @@ export default function Home() {
             "Next.js",
             "D3.js",
             "JavaScript",
-            "APIs",
+            "Fetch APIs",
             "REST APIs",
             "Tailwindcss",
             "HTML",
             "CSS",
           ].map((skill) => (
-            <span key={skill}>{skill}</span>
+            <span className="techs" key={skill}>
+              {skill}
+            </span>
           ))}
         </div>
       </section>
 
-      {/* Latest Blogs */}
+      {/* Featured Projects */}
       <section className="container">
-        <h2>Latest Blog Posts</h2>
-        <div className="blog-container">
-          {latestBlogs.map((blog) => (
-            <BlogCard key={blog.id} blog={blog} />
+        <h2>Featured Projects</h2>
+        <div className="project-container">
+          {featuredProjects.map((project) => (
+            <ProjectCard key={project.id} project={project} />
           ))}
+
+          <Link
+            href="/projects"
+            className="brand-button"
+            style={{ marginTop: 20 }}
+          >
+            View More &rarr;
+          </Link>
         </div>
       </section>
 
