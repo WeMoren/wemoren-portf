@@ -7,7 +7,7 @@
   --neon-blue: #00e5ff;
   --card-shadow: #014b53;
   --nav-blue: #056f7b;
-  --soft-silver: #e4e4e7;
+  --soft-silver: #d9d9d9;
   --card-background: #0d132f;
   --contact-placeholder: #7d89ac;
   --contact-text: #aab3d0;
@@ -474,7 +474,7 @@ body {
   }
 
   .container h2 {
-    font-size: 16px;
+    font-size: 1.5rem;
   }
 
   .hero-gradient h2 {
@@ -529,6 +529,10 @@ body {
 }
 
 @media (max-width: 420px) {
+  .container h2 {
+    font-size: 1rem;
+  }
+
   .mobile-menu {
     height: 100vh;
   }

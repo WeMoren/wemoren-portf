@@ -5,7 +5,7 @@ import ProjectCard from "./components/ProjectCard";
 import page from "./contact/page";
 import AboutMe from "./components/AboutMe";
 
-export default function Home() {
+export default function Home({ project }) {
   const featuredProjects = [
     {
       id: 1,
