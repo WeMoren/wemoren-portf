@@ -410,9 +410,20 @@ body {
   display: flex;
   align-items: center;
   gap: 6px;
+  /* background-color: var(--neon-blue); */
   color: var(--neon-blue);
   text-decoration: none;
   font-weight: 500;
+  padding: 6px;
+  border: 1px solid var(--neon-blue);
+  border-radius: 999px;
+  transition: all 0.4s ease-in-out;
+}
+
+.cv-download:hover {
+  border-color: var(--neon-blue);
+  transform: translateY(-3px);
+  background-color: transparent;
 }
 
 /* Bottom row */
