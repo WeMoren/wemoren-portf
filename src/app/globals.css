@@ -120,6 +120,7 @@ body {
   border-radius: 1rem;
   text-align: center;
   margin-top: 2rem;
+
   padding: 2rem;
 }
 
@@ -143,7 +144,7 @@ body {
   background-color: var(--neon-blue);
   color: var(--midnight-blue);
   border: none;
-  padding: 0.75rem 1.5rem;
+  padding: 0.75rem 0.8rem;
   border-radius: 0.5rem;
   font-weight: bold;
   cursor: pointer;
@@ -194,6 +195,7 @@ body {
   gap: 1rem;
   place-items: center;
   justify-content: center;
+  padding: 16px;
 }
 
 .skills {
@@ -342,6 +344,12 @@ body {
   color: var(--soft-silver);
 }
 
+.hero-gradient {
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
 /* =========================
    Footer
    ========================= */
@@ -456,6 +464,29 @@ body {
 
 /* Mobile */
 @media (max-width: 768px) {
+  .project-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1.8rem;
+    place-items: center;
+    justify-content: center;
+    padding: 16px;
+  }
+
+  .container h2 {
+    font-size: 16px;
+  }
+
+  .hero-gradient h2 {
+    font-size: 16px;
+    margin-bottom: 1rem;
+  }
+
+  .brand-button {
+    padding: 0.75rem;
+    font-size: 16px;
+  }
+
   .nav-right {
     margin-left: auto;
   }

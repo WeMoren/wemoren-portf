@@ -90,15 +90,7 @@ export default function Home() {
           className="hero-gradient"
           style={{ marginTop: "2rem", padding: "2rem" }}
         >
-          <h2
-            style={{
-              fontSize: "2rem",
-              fontWeight: "600",
-              marginBottom: "1rem",
-            }}
-          >
-            Let&apos;s Build Something Together
-          </h2>
+          <h2>Let&apos;s Build Something Together</h2>
           <a href="/contact" className="brand-button" target="_blank">
             Contact Me
           </a>
