@@ -1,6 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import styles from "./AboutMe.module.css";
+import { Download } from "lucide-react";
 const AboutMe = () => {
   return (
     <div className="">
@@ -19,7 +20,9 @@ const AboutMe = () => {
               improving my skills to deliver the best solutions.
             </p>
             <a href="/wemoren-portfolio.pdf" download>
-              <button className={styles.resumeBtn}>Download Resume</button>
+              <button className={styles.resumeBtn}>
+                <Download className="aboutme-download" /> Resume
+              </button>
             </a>
           </div>
           <div className="about-image">

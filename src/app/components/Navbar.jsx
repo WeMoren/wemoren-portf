@@ -4,6 +4,7 @@ import React from "react";
 import { useState, useEffect } from "react";
 import Link from "next/link";
 import Image from "next/image";
+import LightDarkMode from "./LightDarkMode";
 
 const Navbar = () => {
   const [openMenu, setOpenMenu] = useState(false);
@@ -52,7 +53,7 @@ const Navbar = () => {
           </Link>
         ))}
       </div>
-
+      <LightDarkMode />
       {/* Hamburger menu */}
       <div
         className={`hamburger ${openMenu ? "open" : ""}`}
