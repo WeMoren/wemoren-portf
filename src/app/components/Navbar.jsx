@@ -53,28 +53,32 @@ const Navbar = () => {
           </Link>
         ))}
       </div>
-      <LightDarkMode />
-      {/* Hamburger menu */}
-      <div
-        className={`hamburger ${openMenu ? "open" : ""}`}
-        onClick={() => setOpenMenu(!openMenu)}
-      >
-        <span />
-        <span />
-        <span />
-      </div>
 
-      {/* Mobile Menu */}
-      <div className={`mobile-menu ${openMenu ? "show" : ""}`}>
-        {links.map((link) => (
-          <Link
-            key={link.href}
-            href={link.href}
-            onClick={() => setOpenMenu(false)}
-          >
-            {link.label}
-          </Link>
-        ))}
+      {/* Hamburger menu */}
+      <div className="nav-right">
+        <div
+          className={`hamburger ${openMenu ? "open" : ""}`}
+          onClick={() => setOpenMenu(!openMenu)}
+        >
+          <span />
+          <span />
+          <span />
+        </div>
+
+        {/* Mobile Menu */}
+
+        <div className={`mobile-menu ${openMenu ? "show" : ""}`}>
+          {links.map((link) => (
+            <Link
+              key={link.href}
+              href={link.href}
+              onClick={() => setOpenMenu(false)}
+            >
+              {link.label}
+            </Link>
+          ))}
+        </div>
+        <LightDarkMode />
       </div>
     </nav>
   );

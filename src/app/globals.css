@@ -93,6 +93,12 @@ body {
   padding: 20px;
 }
 
+.nav-right {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
 .nav-links {
   display: flex;
   gap: 10px;
@@ -316,7 +322,7 @@ body {
 
 .mobile-menu {
   display: none;
-  position: absolute;
+  position: fixed;
   top: 75px;
   right: 0;
   width: 100%;
@@ -450,6 +456,10 @@ body {
 
 /* Mobile */
 @media (max-width: 768px) {
+  .nav-right {
+    margin-left: auto;
+  }
+
   .footer-grid {
     grid-template-columns: 1fr;
     text-align: center;
