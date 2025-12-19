@@ -79,7 +79,7 @@ const Footer = () => {
 
       {/* Utility row */}
       <div className="footer-bottom">
-        <p>&copy; {new Date().getFullYear()} WeMoren</p>
+        <p>&copy; {new Date().getFullYear()} WeMoren. All rights reserved.</p>
 
         <button className="back-to-top" onClick={scrollToTop}>
           <ArrowUp />
