@@ -185,6 +185,7 @@ body {
   max-width: 1200px;
   margin: 0 auto;
   padding: 2rem 0;
+  margin-top: 4rem;
 }
 
 .container h2 {
@@ -223,6 +224,7 @@ body {
 .contact-container {
   min-height: 100vh;
   padding: 60px 20px;
+  margin-top: 4rem;
   background: var(--contact-bg);
   color: var(--soft-silver);
   display: flex;

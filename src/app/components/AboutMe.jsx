@@ -4,7 +4,7 @@ import styles from "./AboutMe.module.css";
 import { Download } from "lucide-react";
 const AboutMe = () => {
   return (
-    <div className="">
+    <div className="container">
       <section className={styles.AboutMe}>
         <h2 className={styles.sectionHeader}>About Me</h2>
         <div className={styles.aboutContent}>
