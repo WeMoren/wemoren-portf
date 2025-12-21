@@ -1,6 +1,6 @@
 "use client";
 import React from "react";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 const page = () => {
   const [status, setStatus] = useState("");
   const [loading, setLoading] = useState("");
@@ -36,6 +36,22 @@ const page = () => {
     }
     setLoading(false);
   };
+
+  useEffect(() => {
+    const handleKeys = (e) => {
+      const key = e.key.toLowerCase();
+
+      if (document.activeElement.tagName === "INPUT" && e.key !== "enter")
+        return;
+
+      if (key === "enter") {
+        setLoading(true);
+      }
+    };
+
+    window.addEventListener("keydown", handleKeys);
+    return () => window.removeEventListener("keydown", handleKeys);
+  });
 
   return (
     <div>

@@ -23,7 +23,7 @@ const LightDarkMode = () => {
 
   return (
     <div>
-      <button onClick={toggleTheme} style={{width:"auto",height:"auto", padding:"6px", display:"flex", alignItems:"center", justifyContent:"center"}}  aria-label="Toggle theme">
+      <button className="theme-btn" onClick={toggleTheme} style={{width:"auto",height:"auto", padding:"6px", display:"flex", alignItems:"center", justifyContent:"center"}}  aria-label="Toggle theme">
         {theme === "dark" ? (
           <Moon color="var(--soft-silver)" size={30} />
         ) : (
