@@ -26,7 +26,7 @@ const Footer = () => {
       <div className="footer-grid">
         {/* Brand */}
         <div className="footer-brand">
-          <h3>WeMoren</h3>
+          <h3 onClick={scrollToTop}>WeMoren</h3>
           <p>Frontend Developer</p>
         </div>
 
@@ -38,34 +38,34 @@ const Footer = () => {
           <Link href="/contact">Contact</Link>
         </div>
 
-        {/* Actions */}
+        {/* Social icons */}
         <div className="footer-actions">
           <div className="footer-socials">
             <a
               href="https://github.com/WeMoren"
               target="_blank"
-              rel="noopener noreferer"
+              rel="noopener noreferrer"
             >
               <Github />
             </a>
             <a
               href="https://linkedin.com/WeMoren"
               target="_blank"
-              rel="noopener noreferer"
+              rel="noopener noreferrer"
             >
               <Linkedin />
             </a>
             <a
               href="https://twitter.com/WeMoren"
               target="_blank"
-              rel="noopener noreferer"
+              rel="noopener noreferrer"
             >
               <Twitter />
             </a>
             <a
               href="https://youtube.com/@wemoren_dev"
               target="_blank"
-              rel="noopener noreferer"
+              rel="noopener noreferrer"
             >
               <Youtube />
             </a>
