@@ -54,7 +54,7 @@ const Navbar = () => {
         ))}
       </div>
 
-      {/* Hamburger menu */}
+      {/* Hamburger menu icon */}
       <div className="nav-right">
         <div
           className={`hamburger ${openMenu ? "open" : ""}`}

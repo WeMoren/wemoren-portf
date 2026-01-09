@@ -12,19 +12,15 @@ export default function Home({ project }) {
       title: "Portfolio Website",
       tech: "Next.js, CSS",
       description: "My dev portfolio showcasing...",
+      visit: "/",
     },
     {
       id: 2,
       title: "Movie App",
       tech: "React, TMDB API",
       description: "Movie discovery app",
+      visit: "https://movie-library-pw5z.vercel.app",
     },
-    //     {
-    //       id: 3,
-    //       title: "Countdown Timer",
-    //       tech: "React, CSS",
-    //       description: "Time management app",
-    //     },
   ];
 
   return (

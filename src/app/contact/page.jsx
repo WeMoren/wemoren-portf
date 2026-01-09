@@ -1,8 +1,8 @@
 "use client";
 import React from "react";
-import { useState, useEffect } from "react";
+import { useState } from "react";
 const page = () => {
-  const [status, setStatus] = useState("");
+  const [status, setStatus] = useState("Expecting your message.");
   const [loading, setLoading] = useState("");
 
   const handleSubmit = async (e) => {
@@ -34,24 +34,24 @@ const page = () => {
       setStatus("Server error. Tryy again later!");
       console.error(err);
     }
-    setLoading(false);
+    setLoading(true);
   };
 
-  useEffect(() => {
-    const handleKeys = (e) => {
-      const key = e.key.toLowerCase();
+  //   useEffect(() => {
+  //     const handleKeys = (e) => {
+  //       const key = e.key.toLowerCase();
 
-      if (document.activeElement.tagName === "INPUT" && e.key !== "enter")
-        return;
+  //       if (document.activeElement.tagName === "INPUT" && e.key !== "enter")
+  //         return;
 
-      if (key === "enter") {
-        setLoading(true);
-      }
-    };
+  //       if (key === "enter") {
+  //         setLoading(true);
+  //       }
+  //     };
 
-    window.addEventListener("keydown", handleKeys);
-    return () => window.removeEventListener("keydown", handleKeys);
-  });
+  //     window.addEventListener("keydown", handleKeys);
+  //     return () => window.removeEventListener("keydown", handleKeys);
+  //   });
 
   return (
     <div>
@@ -60,7 +60,7 @@ const page = () => {
           <h1>Contact Me</h1>
           <p>
             Want to collaborate, hire me, or just reach out? Send a message —
-            I’ll reply as soon as I can.
+            I&apos;ll reply as soon as I can.
           </p>
 
           <form action="" className="contact-form">

@@ -1,5 +1,5 @@
 .project-card .tech-pills {
-  padding: 0.5rem 1rem;
+  padding: 0.5rem 0.8rem;
   border-radius: 9999px;
   border: 2px solid var(--neon-blue);
   color: var(--neon-blue);
@@ -11,6 +11,7 @@
 
 .project-card .project-title {
   color: var(--soft-silver);
+  font-size: 1rem;
 }
 
 .project-card .project-description {

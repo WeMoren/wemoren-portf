@@ -5,21 +5,25 @@ const Projects = ({ project }) => {
   const featuredProjects = [
     {
       id: 1,
+      image: "/portf-img.png",
       title: "Portfolio Website",
       tech: "Next.js, CSS",
-      description: "My dev portfolio showcasing...",
+      description: "My dev portfolio...",
+      visit: "/",
     },
     {
       id: 2,
       title: "Movie App",
       tech: "React, TMDB API",
       description: "Movie discovery app",
+      visit: "https://movie-library-pw5z.vercel.app",
     },
     {
       id: 3,
       title: "Countdown Timer",
       tech: "React, CSS",
       description: "Time management app",
+      visit: "https://countdown-timer-eosin-seven.vercel.app",
     },
 
     {

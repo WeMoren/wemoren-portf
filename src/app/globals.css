@@ -179,6 +179,26 @@ body {
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
 }
 
+.demo {
+  text-decoration: none;
+  background: transparent;
+  border: 2px solid var(--neon-blue);
+  color: var(--soft-silver);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  padding: 10px;
+  border-radius: 999px;
+  transition: 0.5s ease-in-out;
+}
+
+.demo:hover {
+  background: transparent;
+  color: var(--background);
+  background: var(--neon-blue);
+}
+
 /* Container */
 .container {
   width: 90%;
@@ -300,8 +320,10 @@ body {
 }
 
 .status-message {
+  font-size: 25px;
   margin-top: 20px;
   font-weight: bold;
+  color: var(--text-primary);
 }
 
 .hamburger {
@@ -358,9 +380,7 @@ body {
   margin-bottom: 1rem;
 }
 
-/* =========================
-   Footer
-   ========================= */
+/* Footer */
 
 .footer {
   background-color: var(--midnight-blue);
@@ -472,6 +492,17 @@ body {
 
 /* Mobile */
 @media (max-width: 768px) {
+  .nav-links {
+    display: none;
+  }
+  .hamburger {
+    display: flex;
+  }
+
+  .mobile-menu.show {
+    display: flex;
+  }
+
   .project-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
