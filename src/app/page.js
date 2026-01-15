@@ -9,6 +9,7 @@ export default function Home({ project }) {
   const featuredProjects = [
     {
       id: 1,
+      image: "/portf-img.png",
       title: "Portfolio Website",
       tech: "Next.js, CSS",
       description: "My dev portfolio showcasing...",
@@ -16,6 +17,7 @@ export default function Home({ project }) {
     },
     {
       id: 2,
+      image: "/movieappimg.png",
       title: "Movie App",
       tech: "React, TMDB API",
       description: "Movie discovery app",

@@ -13,6 +13,7 @@ const Projects = ({ project }) => {
     },
     {
       id: 2,
+      image: "/movieappimg.png",
       title: "Movie App",
       tech: "React, TMDB API",
       description: "Movie discovery app",

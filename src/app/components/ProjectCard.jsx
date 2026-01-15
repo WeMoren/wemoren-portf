@@ -6,7 +6,15 @@ const ProjectCard = ({ project }) => {
   const techs = project.tech.split(",");
   return (
     <div className="project-card">
-      <Image src={project.image} alt="project image" width={250} height={250} />
+      <div className="project-image">
+        <Image
+          src={project.image}
+          alt="project image"
+          fill
+          sizes="(max-width: 768px) 100vw, 250px"
+          className="project-img"
+        />
+      </div>
       <h2 className="project-title">{project.title}</h2>
       <div className="techs-container">
         {techs.map((tech, index) => (
